@@ -3,9 +3,29 @@
  */
 package buscacep;
 
+import buscacep.client.ViaCepClient;
+import buscacep.usecase.BuscaEndereco;
+
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("****** Sistema de busca por cep ******");
+        var input = 1;
+        BuscaEndereco viaCepClient = new ViaCepClient();
 
+        while (input != 0) {
+            System.out.println("Digite o cep desejado: ");
+            var cepInput = scanner.next();
+
+            var endereco = viaCepClient.getEnderecoPeloCep(cepInput);
+            System.out.println(endereco);
+
+            System.out.println("Deseja sair? (0 -> sim, 1 -> não)");
+            input = scanner.nextInt();
+        }
+        System.out.println("Programa finalizado");
     }
 }
