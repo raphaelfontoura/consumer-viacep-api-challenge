@@ -39,11 +39,11 @@ Vou incentivar que você tente fazer sozinha ou sozinho, baseando-se no que vimo
 
 ### O que vamos fazer?
 
-- [ ] Criar uma aplicação para consultar a API ViaCEP
+- [x] Criar uma aplicação para consultar a API ViaCEP
 
-- [ ] Menu para o usuário informar o CEP para busca
+- [x] Menu para o usuário informar o CEP para busca
 
-- [ ] Geração de um arquivo .JSON com os dados do endereço
+- [x] Geração de um arquivo .JSON com os dados do endereço
 
 Tente fazer, pesquise, relembre e assista aos vídeos anteriores.
 
